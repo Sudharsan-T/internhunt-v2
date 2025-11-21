@@ -88,7 +88,7 @@ internhunt/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Sudharsan-T/internhunt.git
+   git clone https://github.com/Sudharsan-T/internhunt-v2.git
    cd internhunt
    ```
 
@@ -138,7 +138,7 @@ internhunt/
 ### Server (.env)
 ```env
 PORT=5000
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/internhunt
+MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/internhunt v2
 JWT_SECRET=your_super_secret_jwt_key
 ```
 
@@ -194,15 +194,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Sudharsan T**
 - GitHub: [@Sudharsan-T](https://github.com/Sudharsan-T)
 
-## 🙏 Acknowledgments
-
-- Design inspiration from modern SaaS platforms
-- Icons by [Lucide](https://lucide.dev)
-- Fonts from [Google Fonts](https://fonts.google.com)
 
 ## 📧 Support
 
-For support, email your-email@example.com or open an issue on GitHub.
+For support, email sudharsant44@gmail.com or open an issue on GitHub.
 
 ---
 
