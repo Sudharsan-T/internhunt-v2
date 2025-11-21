@@ -13,13 +13,14 @@ API.interceptors.request.use((config) => {
   return config;
 });
 
+// UPDATED: added /api prefix
 export const registerUserAPI = async (userData: {
   name: string;
   email: string;
   password: string;
   role: string;
 }) => {
-  const res = await API.post("/auth/register", userData);
+  const res = await API.post("/api/auth/register", userData);
   return res.data;
 };
 
@@ -27,17 +28,17 @@ export const loginUserAPI = async (credentials: {
   email: string;
   password: string;
 }) => {
-  const res = await API.post("/auth/login", credentials);
+  const res = await API.post("/api/auth/login", credentials);
   return res.data;
 };
 
-// Verify token validity
+// UPDATED
 export const verifyTokenAPI = async () => {
-  const res = await API.get("/auth/verify");
+  const res = await API.get("/api/auth/verify");
   return res.data;
 };
 
-// Submit internship application
+// UPDATED
 export const submitApplicationAPI = async (applicationData: {
   internshipId: string;
   fullName: string;
@@ -55,7 +56,7 @@ export const submitApplicationAPI = async (applicationData: {
     }
   });
 
-  const res = await API.post("/applications/submit", formData, {
+  const res = await API.post("/api/applications/submit", formData, {
     headers: {
       "Content-Type": "multipart/form-data",
     },
